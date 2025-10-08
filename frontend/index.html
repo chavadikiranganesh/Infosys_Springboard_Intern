@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loginpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box" id="formBox">
+      <h2 id="formTitle">Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" required>
+          <span class="error" id="emailError"></span>
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" required>
+          <span class="error" id="passwordError"></span>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="oauth">
+          <button type="button" class="btn google" id="googleLogin">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo" />
+            Login with Gmail
+          </button>
+        </div>
+        <div class="switch-link">
+          Don't have an account? <a href="#" id="showRegister">Sign up</a>
+        </div>
+        <div class="switch-link" style="margin-top: 10px;">
+          <a href="#" id="forgotPassword">Forgot Password?</a>
+        </div>
+        <div class="error" id="formError"></div>
+      </form>
+      <form id="registerForm" style="display:none;">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="regEmail" required>
+          <span class="error" id="regEmailError"></span>
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="regPassword" required>
+          <span class="error" id="regPasswordError"></span>
+        </div>
+        <button type="submit" class="btn">Sign up</button>
+        <div class="oauth">
+          <button type="button" class="btn google" id="googleRegister">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo" />
+            Sign up with Gmail
+          </button>
+        </div>
+        <div class="switch-link">
+          Already have an account? <a href="#" id="showLogin">Login</a>
+        </div>
+        <div class="error" id="regFormError"></div>
+      </form>
+      <form id="resetForm" style="display:none;">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="resetEmail" required>
+          <span class="error" id="resetEmailError"></span>
+        </div>
+        <div class="input-group">
+          <label>New Password</label>
+          <input type="password" id="resetPassword" required>
+          <span class="error" id="resetPasswordError"></span>
+        </div>
+        <button type="submit" class="btn">Reset Password</button>
+        <div class="switch-link">
+          <a href="#" id="backToLogin">Back to Login</a>
+        </div>
+        <div class="error" id="resetFormError"></div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
